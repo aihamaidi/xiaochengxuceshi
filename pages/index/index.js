@@ -7,7 +7,7 @@ Page({
     userInfo: {},
     financing:{
       avatarUrl:'../image/理财.jpg',
-      nickName:'理财产品'
+      nickName:'存款业务'
     },
     station:{
       avatarUrl:'../image/网点.jpg',
@@ -15,7 +15,7 @@ Page({
     },
     creditCard:{
       avatarUrl:'../image/信用卡.jpg',
-      nickName: '信用卡申请'
+      nickName: '贷款业务'
     },
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -26,6 +26,24 @@ Page({
       url: '../logs/logs'
     })
   },
+  //贷款业务
+  ToLoan:function(){
+    wx.navigateTo({
+      url: '../loan/loan'
+    })
+  },
+  //网点地图
+  ToMap:function(){
+    wx.navigateTo({
+      url: '../map/map'
+    })
+  },
+  ToDeposit:function(){
+    wx.navigateTo({
+      url: '../deposit/deposit'
+    })
+  },
+  //理财产品
   ToFinancingPage:function(){
     wx.navigateTo({
       url: '../financing/finacing'

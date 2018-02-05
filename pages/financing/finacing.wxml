@@ -1,6 +1,6 @@
 <view class="empty_tip">
   <view class="sort_key_area">
-    <view id="y" class="sort_key_button_yield" bindtap="sort">收益率</view>
+    <view id="y" class="{{isChecked?'sort_key_button_yield_is_checked':'sort_key_button_yield_normal'}}" bindtap="sort">收益率</view>
     <image class="sort_key_button_arrow" src="../image/下箭头.png"></image>
     <view class="sort_key_button_term">期限</view>
     <image class="sort_key_button_arrow" src="../image/下箭头.png"></image>

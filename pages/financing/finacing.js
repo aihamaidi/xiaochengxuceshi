@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isChecked: false,
     list:[
       { name: "新华恒生村镇银行001号理财",yields:5.05,date:6,limit:"10万起购"}, 
       { name: "新华恒生村镇银行002号理财",yields:5.10,date:7,limit:"5万起购"},
@@ -24,9 +25,10 @@ Page({
   //列表排序方法
   sort:function(e){
     var sortList=this.data.list;
-    console.log(sortList);
-    if(e.target.id==="y"){
-      console.log(e);
+    if (e.currentTarget.id==="y"){
+      this.setData({
+        isChecked: true
+      })
       for (var i = 0; i < sortList.length-1;i++){
         for (var j = 0; j < sortList.length-1-i;j++){
           if (sortList[j].yields < sortList[j+1].yields){
@@ -37,7 +39,6 @@ Page({
         }
       }
     }
-    console.log(sortList);
     this.setData({
       list:sortList
     })

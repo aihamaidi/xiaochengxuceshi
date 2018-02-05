@@ -2,12 +2,15 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/financing/finacing"
+    "pages/financing/finacing",
+    "pages/deposit/deposit",
+    "pages/map/map",
+    "pages/loan/loan"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#ff0000",
-    "navigationBarTitleText": "新华恒生村镇银行",
+    "navigationBarTitleText": "新华恒升村镇银行",
     "navigationBarTextStyle":"black",
     "backgroundColor":"#ff0000"
   }
