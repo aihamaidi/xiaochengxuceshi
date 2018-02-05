@@ -1,0 +1,35 @@
+<view class="empty_tip">
+  <view class="sort_key_area">
+    <view id="y" class="sort_key_button_yield" bindtap="sort">收益率</view>
+    <image class="sort_key_button_arrow" src="../image/下箭头.png"></image>
+    <view class="sort_key_button_term">期限</view>
+    <image class="sort_key_button_arrow" src="../image/下箭头.png"></image>
+    <view class="sort_key_button_closingDate">截止日期</view>
+    <image class="sort_key_button_arrow" src="../image/下箭头.png"></image>
+    <view class="sort_key_button_filter">筛选</view>
+    <image class="sort_key_button_funne" src="../image/漏斗.png"></image>
+  </view>
+  <scroll-view scroll-y="true" style="height: 960rpx;">       
+    <view wx:for="{{list}}" class="list_item_area">
+      <text class="list_item_name">{{item.name}}</text>
+      <view class="list_item_messageArea">
+        <view class="list_item_yieldArea">
+          <text class="list_item_yieldNumber">{{item.yields}}%</text>
+          <text class="list_item_labelFont">参考净收益率</text>
+        </view>
+        <view style="height:90rpx;width:1rpx;background-color:#aaa;margin-top:10rpx;margin-right:10rpx;"></view>
+        <view class="list_item_dateArea">
+          <view class="list_item_dateNumber">
+            <text style="margin-right:30rpx;font-size:30rpx">{{item.date}}月</text><text style="font-size:30rpx;">{{item.limit}}</text>
+          </view>
+          <view style="display:flex;flex-direction:row;">
+            <text style="font-size:20rpx;color:#aaa;margin-right:30rpx;">截止购买日期</text><text class="list_item_labelFont">起购金额</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>  
+  <view class="bottom_button_area">
+    <button  class="bottom_button">新客户请到就近网点购买</button>
+  </view>
+</view>

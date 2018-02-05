@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="userinfo-button"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="flex-row">
+    <view class="usermotto" bindtap="ToFinancingPage">
+      <image  class="userinfo-avatar" src="{{financing.avatarUrl}}" background-size="cover"></image>
+      <text   class="userinfo-nickname">{{financing.nickName}}</text>
+    </view>
+    <view class="usermotto">
+      <image  class="userinfo-avatar" src="{{station.avatarUrl}}" background-size="cover"></image>
+      <text   class="userinfo-nickname">{{station.nickName}}</text>
+    </view>
+    <view class="usermotto">
+      <image  class="userinfo-avatar" src="{{creditCard.avatarUrl}}" background-size="cover"></image>
+      <text   class="userinfo-nickname">{{creditCard.nickName}}</text>
+    </view>
+  </view>
+  <view style="background-color:#999;">
+    <text style='margin-left:20px;font-size:30rpx;'>精选优惠活动</text>
+  </view>  
+    <image mode="widthFix" style="width:750rpx;" src="../image/优惠活动1.jpg"></image>
+    <image mode="widthFix" style="width:750rpx;" src="../image/优惠活动2.jpg"></image>
+</view>

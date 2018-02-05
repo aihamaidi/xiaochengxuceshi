@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/financing/finacing"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTitleText": "新华恒生村镇银行",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#ff0000"
+  }
+}
