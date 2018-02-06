@@ -6,15 +6,15 @@ Page({
   data: {
     userInfo: {},
     financing:{
-      avatarUrl:'../image/理财.jpg',
+      avatarUrl:'../image/financing.jpg',
       nickName:'存款业务'
     },
     station:{
-      avatarUrl:'../image/网点.jpg',
+      avatarUrl:'../image/station.jpg',
       nickName: '网点查询'
     },
     creditCard:{
-      avatarUrl:'../image/信用卡.jpg',
+      avatarUrl:'../image/creditCard.jpg',
       nickName: '贷款业务'
     },
     hasUserInfo: false,

@@ -23,8 +23,7 @@
   </view>
   <view style="background-color:#999;">
     <text style='margin-left:20px;font-size:30rpx;'>热门活动</text>
-  </view>
-  <button>新年快乐</button>  
-    <!-- <image mode="widthFix" style="width:750rpx;" src="../image/优惠活动1.jpg"></image>
-    <image mode="widthFix" style="width:750rpx;" src="../image/优惠活动2.jpg"></image> -->
+  </view>  
+     <image mode="widthFix" style="width:750rpx;" src="../image/activity1.jpg"></image>
+    <image mode="widthFix" style="width:750rpx;" src="../image/activity2.jpg"></image> 
 </view>
